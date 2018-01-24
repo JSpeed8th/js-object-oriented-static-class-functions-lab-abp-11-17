@@ -3,7 +3,7 @@ class Question {
 
 
 static All() {
-  return this.contructor._All;
+  return this.constructor._All;
 }
 
 }
