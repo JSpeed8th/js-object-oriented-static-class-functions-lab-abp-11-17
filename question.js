@@ -5,18 +5,18 @@ class Question {
     this.save()
   }
 
-save() {
+  save() {
   this.constructor._All.push(this)
-}
+  }
 
-static Find(id){
-  id - 1;
-  return this.constructor._All[id];
-}
+  static Find(id){
+  let newId = id - 1;
+  return this.constructor._All[newId];
+  }
 
-static All() {
+  static All() {
   return this._All;
-}
+  }
 }
 
 Question._All = []
