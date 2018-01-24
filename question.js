@@ -1,5 +1,8 @@
 'use strict';
 class Question {
+  constructor (content){
+    this.question = content;
+  }
 
 
 static All() {
