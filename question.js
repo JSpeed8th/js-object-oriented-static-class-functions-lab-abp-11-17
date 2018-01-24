@@ -1,26 +1,27 @@
 'use strict';
-
 class Question {
-
   constructor (content){
-
     this.content = content
     this.save()
   }
 
-  static All(){
+  save() {
+  this.constructor._All.push(this)
+  }
 
+  static Find(id){
+  let newId = id - 1;
+  return this._All[newId];
+  }
+
+  static All() {
   return this._All;
-  }
-
-  static Find (id) {
-
-    return this.All()[id - 1]
-  }
-
-  save(){
-    this.constructor._All.push(this)
   }
 }
 
-Question._All = [];
+Question._All = []
+
+// question1 = new Question ("content")
+// question2 = new Question ("content")
+//
+// [question1, question2]
