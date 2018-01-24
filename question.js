@@ -11,7 +11,7 @@ class Question {
 
   static Find(id){
   let newId = id - 1;
-  return this._All[id];
+  return this._All[newId];
   }
 
   static All() {
@@ -20,3 +20,8 @@ class Question {
 }
 
 Question._All = []
+
+// question1 = new Question ("content")
+// question2 = new Question ("content")
+// 
+// [question1, question2]
