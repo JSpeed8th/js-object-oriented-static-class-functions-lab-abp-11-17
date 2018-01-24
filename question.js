@@ -11,7 +11,7 @@ class Question {
 
   static Find(id){
   let newId = id - 1;
-  return this.constructor._All[newId];
+  return this._All[id];
   }
 
   static All() {
