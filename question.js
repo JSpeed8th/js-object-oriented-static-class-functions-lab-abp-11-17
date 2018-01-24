@@ -14,7 +14,7 @@ static Find(id){
 }
 
 static All() {
-  return this.constructor._All;
+  return this._All;
 }
 }
 
